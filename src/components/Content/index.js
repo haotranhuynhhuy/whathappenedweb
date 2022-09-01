@@ -1,6 +1,7 @@
 import React from 'react'
 import BestProductItem from './BestProduct'
 import './Content.scss'
+import IssueProduct from './IssueProduct'
 import ListProduct from './ListProduct'
 const Content = () => {
     return (
@@ -67,7 +68,35 @@ const Content = () => {
             <div className='btn__seemore'>
                 <button >SEE MORE</button>
             </div>
-
+            <div className='content__issue'>
+                <div className='content__issue--top'>
+                    <p className='issue__title'>HAPPENED'S ISSUE</p>
+                    <p className='issue__desc'>모바일에 최적화된 비디오를 단 몇 분 만에 제작해보세요. 디자이너가 아니더라도,  모든 팀에서
+                        다듬을 수 있습니다. 브랜드의 성공을 위한 첫 걸음을  내딛어보세요. 비디오를 단 몇 분 만에 제작해보세요.  </p>
+                    <div className='btn__seemore'>
+                        <button>SEE MORE</button>
+                    </div>
+                    <img src={require('../../assets/images/NewsObject_01.png')} alt='' className='issue__icon1' />
+                    <img src={require('../../assets/images/NewsObject_02.png')} alt='' className='issue__icon2' />
+                </div>
+                <div className='content__issue--bottom'>
+                    <div className='issue__first'>
+                        <p className='issue__first--title'>WHPNISSUE</p>
+                        <img src={require('../../assets/images/NewsImg_01.png')} alt='' className='issue__first--img' />
+                        <img src={require('../../assets/images/NewsObject_03.png')} alt='' className='issue__first--object' />
+                    </div>
+                    <div className='issue__seccond'>
+                        <IssueProduct brand={'B BRAND'} brandImg={require('../../assets/images/NewsImg_02.png')} />
+                        <img src={require('../../assets/images/NewsObject_04.png')} alt='' className='issue__first--object2' />
+                    </div>
+                    <IssueProduct brand={'C BRAND'} brandImg={require('../../assets/images/NewsImg_02.png')} />
+                    <div className='issue__third'>
+                        <IssueProduct brand={'D BRAND'} color={'#ff5500'} brandImg={require('../../assets/images/NewsImg_03.png')} />
+                        <img src={require('../../assets/images/NewsObject_05.png')} alt='' className='issue__first--object3' />
+                    </div>
+                    <IssueProduct brand={'E BRAND'} brandImg={require('../../assets/images/NewsImg_04.png')} />
+                </div>
+            </div>
         </div>
     )
 }

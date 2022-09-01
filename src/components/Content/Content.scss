@@ -84,3 +84,116 @@
         border-radius: 5px;
     }
 }
+
+.content__issue {
+    height: 100vh;
+    background: #fccb05;
+    position: relative;
+
+    .content__issue--top {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .issue__title {
+            font-size: 45px;
+            font-weight: bold;
+            margin-top: 158px;
+        }
+
+        .issue__desc {
+            margin: 0;
+            width: 710px;
+            font-family: NotoSans;
+            font-size: 16px;
+            line-height: 1.88;
+        }
+
+        .btn__seemore {
+            margin-top: 55px;
+        }
+
+        .issue__icon1 {
+            position: absolute;
+            width: 95px;
+            top: 43px;
+            right: 70px;
+        }
+
+        .issue__icon2 {
+            position: absolute;
+            top: 163px;
+            right: 68px;
+            width: 119px;
+        }
+    }
+
+    .content__issue--bottom {
+        margin-top: 128px;
+        width: 100%;
+        display: flex;
+        border-top: 3px solid;
+
+        .issue__first {
+            width: 20%;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            background-color: #f96400;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            border-bottom: 3px solid;
+
+            .issue__first--title {
+                margin: 0;
+                width: 195px;
+                font-size: 55px;
+                font-weight: 800;
+                word-break: break-all;
+            }
+
+            .issue__first--img {
+                margin-top: 60px;
+                width: 148px;
+                height: 148px;
+            }
+
+            .issue__first--object {
+                position: absolute;
+                width: 160px;
+                bottom: -90px;
+                right: -15px;
+                z-index: 9;
+            }
+
+
+        }
+
+        .issue__seccond {
+            position: relative;
+
+            .issue__first--object2 {
+                position: absolute;
+                width: 120px;
+                top: -28px;
+                left: 26px;
+                z-index: 9;
+            }
+        }
+
+        .issue__third {
+            position: relative;
+
+            .issue__first--object3 {
+                position: absolute;
+                width: 120px;
+                bottom: -57px;
+                right: -28px;
+                z-index: 9;
+            }
+        }
+
+    }
+}
