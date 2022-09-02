@@ -10,6 +10,10 @@
     @include mobile {
         width: 250px;
     }
+
+    @include tablet {
+        max-width: 350px;
+    }
 }
 
 .product__icon {
@@ -32,6 +36,13 @@
         bottom: 5px;
         left: 100%;
     }
+
+    @include tablet {
+        width: 300px;
+        bottom: -46px;
+        left: 5%;
+    }
+
 
     .product__content {
         display: flex;

@@ -22,6 +22,11 @@
             top: 10px;
             left: 74px;
         }
+
+        @include tablet {
+            top: 10px;
+            left: 74px;
+        }
     }
 
     .text__title {
@@ -30,6 +35,10 @@
 
         @include mobile {
             font-size: 25px;
+        }
+
+        @include tablet {
+            font-size: 40px;
         }
 
     }
@@ -46,6 +55,12 @@
             font-size: 16px;
 
         }
+
+        @include tablet {
+            width: 100%;
+            font-size: 20px;
+
+        }
     }
 }
 
@@ -58,12 +73,20 @@
         height: 100vh;
     }
 
+    @include tablet {
+        height: 100vh;
+    }
+
     .content__product {
         text-align: center;
         color: #f96400;
         padding-top: 66px;
 
         @include mobile {
+            padding-top: 33px;
+        }
+
+        @include tablet {
             padding-top: 33px;
         }
 
@@ -76,6 +99,10 @@
             @include mobile {
                 font-size: 25px;
             }
+
+            @include mobile {
+                font-size: 40px;
+            }
         }
 
         .product__desc {
@@ -87,6 +114,10 @@
 
             @include mobile {
                 font-size: 16px;
+            }
+
+            @include tablet {
+                font-size: 20px;
             }
         }
     }
@@ -114,6 +145,10 @@
         margin: 0 50px;
     }
 
+    @include tablet {
+        margin: 0 50px;
+    }
+
 }
 
 .btn__seemore {
@@ -133,13 +168,20 @@
 .content__brand {
     width: 100%;
     margin-top: 140px;
-    background: url('../../assets/images/brand_bg.jpg') repeat center / contain;
+    background: url('../../assets/images/brand_bg.jpg') no-repeat center / contain;
     height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
 
     @include mobile {
+        margin-top: 40px;
+        background: url('../../assets/images/brand_bg.jpg') repeat center / contain;
+
+    }
+
+    @include tablet {
+        background: url('../../assets/images/brand_bg.jpg') repeat center / contain;
         margin-top: 40px;
     }
 
@@ -152,6 +194,10 @@
             margin: 100px 0 60px;
         }
 
+        @include tablet {
+            margin: 100px 0 60px;
+        }
+
         .brand__title {
             font-size: 45px;
             font-weight: bold;
@@ -160,6 +206,10 @@
 
             @include mobile {
                 font-size: 25px;
+            }
+
+            @include tablet {
+                font-size: 40px;
             }
         }
 
@@ -173,7 +223,11 @@
             @include mobile {
                 font-size: 16px;
                 line-height: 1.4;
+            }
 
+            @include tablet {
+                font-size: 20px;
+                line-height: 1.6;
             }
         }
     }
@@ -183,6 +237,10 @@
         text-align: center;
 
         .brand__window {
+            @include tablet {
+                width: 75%;
+            }
+
             @include mobile {
                 max-width: 75%;
                 height: 210px;
@@ -201,6 +259,11 @@
                 right: 15%;
             }
 
+            @include tablet {
+                top: 0;
+                right: 15%;
+            }
+
             .brand__text--title {
                 font-size: 25px;
                 font-weight: 800;
@@ -209,6 +272,11 @@
                 @include mobile {
                     width: 150px;
                     font-size: 16px;
+                }
+
+                @include tablet {
+                    width: 250px;
+                    font-size: 20px;
                 }
             }
 
@@ -221,6 +289,13 @@
                 @include mobile {
                     font-size: 14px;
                     width: 200px;
+                    height: 70px;
+                    overflow-y: auto;
+                }
+
+                @include tablet {
+                    font-size: 16px;
+                    width: 300px;
                     height: 70px;
                     overflow-y: auto;
                 }
@@ -266,6 +341,10 @@
             @include mobile {
                 font-size: 25px;
             }
+
+            @include tablet {
+                font-size: 40px;
+            }
         }
 
         .issue__desc {
@@ -275,6 +354,10 @@
             line-height: 1.88;
 
             @include mobile {
+                max-width: 75%;
+            }
+
+            @include tablet {
                 max-width: 75%;
             }
         }
@@ -294,6 +377,12 @@
                 top: 43px;
                 right: 30px;
             }
+
+            @include tablet {
+                width: 70px;
+                top: 43px;
+                right: 30px;
+            }
         }
 
         .issue__icon2 {
@@ -305,6 +394,12 @@
             @include mobile {
                 width: 80px;
                 top: 100px;
+                right: 30px;
+            }
+
+            @include tablet {
+                width: 100px;
+                top: 120px;
                 right: 30px;
 
             }
@@ -318,6 +413,14 @@
         border-top: 3px solid;
 
         @include mobile {
+            width: 100vw;
+            flex-wrap: wrap;
+            border: none;
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+
+        @include tablet {
             width: 100vw;
             flex-wrap: wrap;
             border: none;
@@ -340,6 +443,10 @@
                 width: 389px;
             }
 
+            @include tablet {
+                width: 389px;
+            }
+
             .issue__first--title {
                 margin: 0;
                 width: 195px;
@@ -354,7 +461,12 @@
 
                 @include mobile {
                     width: 100px;
-                    margin-bottom: 60pxx;
+                    margin-bottom: 60px;
+                }
+
+                @include tablet {
+                    width: 140px;
+                    margin-bottom: 60px;
                 }
             }
 
@@ -415,6 +527,11 @@
                 font-size: 25px;
                 text-align: center;
             }
+
+            @include tablet {
+                font-size: 40px;
+                text-align: center;
+            }
         }
 
         .video__desc {
@@ -426,6 +543,10 @@
 
             @include mobile {
                 font-size: 16px;
+            }
+
+            @include tablet {
+                font-size: 20px;
             }
         }
 

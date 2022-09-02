@@ -10,6 +10,11 @@
 
     }
 
+    @include tablet {
+        margin: 0 20px;
+
+    }
+
     &::before {
         content: '';
         width: 100%;

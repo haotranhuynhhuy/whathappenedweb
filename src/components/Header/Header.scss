@@ -20,6 +20,10 @@
             display: none;
         }
 
+        @include tablet {
+            display: none;
+        }
+
         display: flex;
         padding: 34px 120px;
         font-size: 14px;
@@ -72,6 +76,16 @@
                 color: white;
             }
 
+            @include tablet {
+                display: block;
+                cursor: pointer;
+                position: absolute;
+                top: 0;
+                right: 10px;
+                font-size: 20px;
+                color: white;
+            }
+
         }
 
         p {
@@ -83,6 +97,13 @@
         display: none;
 
         @include mobile {
+            cursor: pointer;
+            display: block;
+            font-size: 26px;
+            margin: 0 50px;
+        }
+
+        @include tablet {
             cursor: pointer;
             display: block;
             font-size: 26px;

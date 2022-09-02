@@ -8,6 +8,12 @@
         top: 80px;
         right: 60px;
     }
+
+    @include tablet {
+        width: 75%;
+        top: 80px;
+        right: 60px;
+    }
 }
 
 .video__object1 {
@@ -18,6 +24,12 @@
     z-index: 2;
 
     @include mobile {
+        width: 120px;
+        bottom: 10%;
+        left: 10%;
+    }
+
+    @include tablet {
         width: 120px;
         bottom: 10%;
         left: 10%;
@@ -36,6 +48,12 @@
         bottom: 15%;
         right: 20%;
     }
+
+    @include tablet {
+        width: 40px;
+        bottom: 15%;
+        right: 20%;
+    }
 }
 
 .video__object3 {
@@ -45,6 +63,12 @@
     left: 223px;
 
     @include mobile {
+        width: 40px;
+        bottom: 15%;
+        left: 6%;
+    }
+
+    @include tablet {
         width: 40px;
         bottom: 15%;
         left: 6%;
@@ -64,6 +88,13 @@
         top: 25%;
         left: -15%;
     }
+
+    @include tablet {
+        width: 220px;
+        height: 220px;
+        top: 25%;
+        left: -15%;
+    }
 }
 
 .video__object5 {
@@ -73,6 +104,12 @@
     left: 226px;
 
     @include mobile {
+        width: 120px;
+        top: 0;
+        left: 0;
+    }
+
+    @include tablet {
         width: 120px;
         top: 0;
         left: 0;
@@ -91,6 +128,12 @@
         top: 80px;
         right: 60px;
     }
+
+    @include tablet {
+        width: 70px;
+        top: 80px;
+        right: 60px;
+    }
 }
 
 .video__object7 {
@@ -100,6 +143,12 @@
     right: 138px;
 
     @include mobile {
+        width: 70px;
+        top: 20px;
+        right: 20px;
+    }
+
+    @include tablet {
         width: 70px;
         top: 20px;
         right: 20px;
@@ -118,6 +167,12 @@
         top: 60%;
         right: -5%;
     }
+
+    @include tablet {
+        width: 120px;
+        top: 60%;
+        right: -5%;
+    }
 }
 
 .video__object9 {
@@ -127,6 +182,12 @@
     right: -9%;
 
     @include mobile {
+        width: 120px;
+        top: 50%;
+        right: -5%;
+    }
+
+    @include tablet {
         width: 120px;
         top: 50%;
         right: -5%;
