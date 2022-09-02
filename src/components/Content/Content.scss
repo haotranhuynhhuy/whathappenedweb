@@ -1,5 +1,7 @@
 .content {
-    img {
+
+    .content__banner,
+    .content__bg {
         width: 100%;
     }
 }
@@ -85,6 +87,67 @@
     }
 }
 
+.content__brand {
+    margin-top: 140px;
+    background: url('../../assets/images/brand_bg.jpg');
+    height: 956px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .content__brand--top {
+        text-align: center;
+        color: #fcd32a;
+        margin: 140px 0 60px;
+
+        .brand__title {
+            font-size: 45px;
+            font-weight: bold;
+            letter-spacing: 4.5px;
+            margin: 0;
+        }
+
+        .brand__desc {
+            line-height: 1.88;
+            font-size: 16px;
+            width: 650px;
+            margin-top: 40px;
+            font-family: Noto Sans;
+        }
+    }
+
+    .content__brand--bottom {
+        position: relative;
+        text-align: center;
+
+        .brand__text {
+            position: absolute;
+            top: 15%;
+            right: 5%;
+
+            .brand__text--title {
+                font-size: 25px;
+                font-weight: 800;
+                text-align: left;
+            }
+
+            .brand__text--desc {
+                width: 528px;
+                font-family: Noto Sans;
+                font-size: 16px;
+                text-align: left;
+
+            }
+
+            .btn__seemore {
+                margin-top: 40px;
+                text-align: left;
+
+            }
+        }
+    }
+}
+
 .content__issue {
     height: 100vh;
     background: #fccb05;
@@ -105,7 +168,6 @@
         .issue__desc {
             margin: 0;
             width: 710px;
-            font-family: NotoSans;
             font-size: 16px;
             line-height: 1.88;
         }
@@ -194,6 +256,37 @@
                 z-index: 9;
             }
         }
+    }
+}
 
+.content__video {
+    position: relative;
+    height: 100vh;
+    padding: 150px 0 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .content__video--top {
+        margin-bottom: 72px;
+
+        .video__title {
+            margin: 0;
+            font-size: 50px;
+            font-weight: 800;
+            letter-spacing: 10px;
+        }
+
+        .video__desc {
+            width: 670px;
+            margin-top: 50px;
+            font-size: 20px;
+            line-height: 1.6;
+            text-align: center;
+        }
+
+        .btn__seemore {
+            margin-top: 55px;
+        }
     }
 }
