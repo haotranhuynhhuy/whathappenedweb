@@ -1,3 +1,5 @@
+@import '../../global.scss';
+
 .content {
 
     .content__banner,
@@ -15,11 +17,20 @@
         position: absolute;
         top: 150px;
         left: 174px;
+
+        @include mobile {
+            top: 10px;
+            left: 74px;
+        }
     }
 
     .text__title {
         font-weight: 800;
         font-size: 50px;
+
+        @include mobile {
+            font-size: 25px;
+        }
 
     }
 
@@ -29,6 +40,12 @@
         line-height: 1.75;
         font-size: 20px;
         letter-spacing: 1px;
+
+        @include mobile {
+            width: 80%;
+            font-size: 16px;
+
+        }
     }
 }
 
@@ -37,16 +54,28 @@
     background: url('../../assets/images/bes_bg.png') no-repeat;
     height: 1073px;
 
+    @include mobile {
+        height: 100vh;
+    }
+
     .content__product {
         text-align: center;
         color: #f96400;
         padding-top: 66px;
+
+        @include mobile {
+            padding-top: 33px;
+        }
 
         .product__title {
             font-weight: bold;
             font-size: 50px;
             letter-spacing: 5px;
             opacity: 0.8;
+
+            @include mobile {
+                font-size: 25px;
+            }
         }
 
         .product__desc {
@@ -55,6 +84,10 @@
             line-height: 1.6;
             font-size: 20px;
             letter-spacing: 1px;
+
+            @include mobile {
+                font-size: 16px;
+            }
         }
     }
 
@@ -62,15 +95,25 @@
         display: flex;
         justify-content: center;
 
+        @include mobile {
+            padding: 0 50px;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: flex-start;
+        }
     }
 }
 
 .content__list--product {
-    margin-left: 174px;
-    margin-right: 174px;
+    margin: 0 174px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+
+    @include mobile {
+        margin: 0 50px;
+    }
+
 }
 
 .btn__seemore {
@@ -88,23 +131,36 @@
 }
 
 .content__brand {
+    width: 100%;
     margin-top: 140px;
-    background: url('../../assets/images/brand_bg.jpg');
-    height: 956px;
+    background: url('../../assets/images/brand_bg.jpg') repeat center / contain;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @include mobile {
+        margin-top: 40px;
+    }
 
     .content__brand--top {
         text-align: center;
         color: #fcd32a;
         margin: 140px 0 60px;
 
+        @include mobile {
+            margin: 100px 0 60px;
+        }
+
         .brand__title {
             font-size: 45px;
             font-weight: bold;
-            letter-spacing: 4.5px;
+            letter-spacing: 2.5px;
             margin: 0;
+
+            @include mobile {
+                font-size: 25px;
+            }
         }
 
         .brand__desc {
@@ -113,6 +169,12 @@
             width: 650px;
             margin-top: 40px;
             font-family: Noto Sans;
+
+            @include mobile {
+                font-size: 16px;
+                line-height: 1.4;
+
+            }
         }
     }
 
@@ -120,15 +182,34 @@
         position: relative;
         text-align: center;
 
+        .brand__window {
+            @include mobile {
+                max-width: 75%;
+                height: 210px;
+                padding-top: 100px;
+            }
+        }
+
         .brand__text {
             position: absolute;
             top: 15%;
             right: 5%;
 
+            @include mobile {
+                padding-top: 100px;
+                top: 0;
+                right: 15%;
+            }
+
             .brand__text--title {
                 font-size: 25px;
                 font-weight: 800;
                 text-align: left;
+
+                @include mobile {
+                    width: 150px;
+                    font-size: 16px;
+                }
             }
 
             .brand__text--desc {
@@ -137,21 +218,40 @@
                 font-size: 16px;
                 text-align: left;
 
+                @include mobile {
+                    font-size: 14px;
+                    width: 200px;
+                    height: 70px;
+                    overflow-y: auto;
+                }
+
             }
 
             .btn__seemore {
                 margin-top: 40px;
                 text-align: left;
 
+                @include mobile {
+                    margin-top: 10px;
+
+                    button {
+                        background-color: #fff;
+                        font-size: 14px;
+                        font-weight: 800;
+                        padding: 5px 30px;
+                        border: 3px solid #020001;
+                        border-radius: 5px;
+                    }
+                }
             }
         }
     }
 }
 
 .content__issue {
-    height: 100vh;
     background: #fccb05;
     position: relative;
+    padding: 100px 0 140px;
 
     .content__issue--top {
         text-align: center;
@@ -162,7 +262,10 @@
         .issue__title {
             font-size: 45px;
             font-weight: bold;
-            margin-top: 158px;
+
+            @include mobile {
+                font-size: 25px;
+            }
         }
 
         .issue__desc {
@@ -170,6 +273,10 @@
             width: 710px;
             font-size: 16px;
             line-height: 1.88;
+
+            @include mobile {
+                max-width: 75%;
+            }
         }
 
         .btn__seemore {
@@ -181,6 +288,12 @@
             width: 95px;
             top: 43px;
             right: 70px;
+
+            @include mobile {
+                width: 50px;
+                top: 43px;
+                right: 30px;
+            }
         }
 
         .issue__icon2 {
@@ -188,6 +301,13 @@
             top: 163px;
             right: 68px;
             width: 119px;
+
+            @include mobile {
+                width: 80px;
+                top: 100px;
+                right: 30px;
+
+            }
         }
     }
 
@@ -196,6 +316,14 @@
         width: 100%;
         display: flex;
         border-top: 3px solid;
+
+        @include mobile {
+            width: 100vw;
+            flex-wrap: wrap;
+            border: none;
+            flex-direction: column-reverse;
+            align-items: center;
+        }
 
         .issue__first {
             width: 20%;
@@ -208,6 +336,10 @@
             justify-content: center;
             border-bottom: 3px solid;
 
+            @include mobile {
+                width: 389px;
+            }
+
             .issue__first--title {
                 margin: 0;
                 width: 195px;
@@ -218,8 +350,12 @@
 
             .issue__first--img {
                 margin-top: 60px;
-                width: 148px;
-                height: 148px;
+                width: 20%;
+
+                @include mobile {
+                    width: 100px;
+                    margin-bottom: 60pxx;
+                }
             }
 
             .issue__first--object {
@@ -229,8 +365,6 @@
                 right: -15px;
                 z-index: 9;
             }
-
-
         }
 
         .issue__seccond {
@@ -261,11 +395,12 @@
 
 .content__video {
     position: relative;
-    height: 100vh;
-    padding: 150px 0 250px;
+    padding: 150px 0 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
+
+
 
     .content__video--top {
         margin-bottom: 72px;
@@ -275,6 +410,11 @@
             font-size: 50px;
             font-weight: 800;
             letter-spacing: 10px;
+
+            @include mobile {
+                font-size: 25px;
+                text-align: center;
+            }
         }
 
         .video__desc {
@@ -283,6 +423,10 @@
             font-size: 20px;
             line-height: 1.6;
             text-align: center;
+
+            @include mobile {
+                font-size: 16px;
+            }
         }
 
         .btn__seemore {

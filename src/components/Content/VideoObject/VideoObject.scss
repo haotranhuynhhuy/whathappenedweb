@@ -1,5 +1,13 @@
+@import '../../../global.scss';
+
 .video {
     z-index: 9;
+
+    @include mobile {
+        width: 75%;
+        top: 80px;
+        right: 60px;
+    }
 }
 
 .video__object1 {
@@ -8,6 +16,12 @@
     bottom: -70px;
     left: 348px;
     z-index: 2;
+
+    @include mobile {
+        width: 120px;
+        bottom: 10%;
+        left: 10%;
+    }
 }
 
 
@@ -16,6 +30,12 @@
     width: 90px;
     bottom: 50px;
     right: 30%;
+
+    @include mobile {
+        width: 40px;
+        bottom: 15%;
+        right: 20%;
+    }
 }
 
 .video__object3 {
@@ -23,6 +43,12 @@
     width: 146px;
     bottom: 100px;
     left: 223px;
+
+    @include mobile {
+        width: 40px;
+        bottom: 15%;
+        left: 6%;
+    }
 }
 
 .video__object4 {
@@ -31,6 +57,13 @@
     height: 512px;
     top: 20%;
     left: -18%;
+
+    @include mobile {
+        width: 220px;
+        height: 220px;
+        top: 25%;
+        left: -15%;
+    }
 }
 
 .video__object5 {
@@ -38,6 +71,12 @@
     width: 146px;
     top: 0;
     left: 226px;
+
+    @include mobile {
+        width: 120px;
+        top: 0;
+        left: 0;
+    }
 }
 
 .video__object6 {
@@ -46,6 +85,12 @@
     top: 270px;
     right: 244px;
     z-index: 2;
+
+    @include mobile {
+        width: 70px;
+        top: 80px;
+        right: 60px;
+    }
 }
 
 .video__object7 {
@@ -53,6 +98,12 @@
     width: 158px;
     top: 156px;
     right: 138px;
+
+    @include mobile {
+        width: 70px;
+        top: 20px;
+        right: 20px;
+    }
 }
 
 .video__object8 {
@@ -61,6 +112,12 @@
     bottom: 40px;
     right: -11%;
     z-index: 2;
+
+    @include mobile {
+        width: 120px;
+        top: 60%;
+        right: -5%;
+    }
 }
 
 .video__object9 {
@@ -68,4 +125,10 @@
     width: 342px;
     top: 45%;
     right: -9%;
+
+    @include mobile {
+        width: 120px;
+        top: 50%;
+        right: -5%;
+    }
 }

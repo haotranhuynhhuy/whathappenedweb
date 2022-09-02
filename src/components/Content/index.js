@@ -14,7 +14,7 @@ const Content = () => {
                     <p className='text__title'>WHAT HAPPENED!</p>
                     <p className='text__desc'>How to create mobile-optimized videos in minutes. Not a designer,
                         every team makes a lot of videos Can be trimmed. Take the first
-                        step to your brand's success. How to create <br />
+                        step to your brand's success. How to create
                         mobile-optimized videos in minutes.</p>
                 </div>
             </div>
@@ -108,7 +108,7 @@ const Content = () => {
                         <img src={require('../../assets/images/NewsObject_03.png')} alt='' className='issue__first--object' />
                     </div>
                     <div className='issue__seccond'>
-                        <IssueProduct brand={'B BRAND'} brandImg={require('../../assets/images/NewsImg_02.png')} />
+                        <IssueProduct brand={'B BRAND'} brandImg={require('../../assets/images/NewsImg_05.png')} />
                         <img src={require('../../assets/images/NewsObject_04.png')} alt='' className='issue__first--object2' />
                     </div>
                     <IssueProduct brand={'C BRAND'} brandImg={require('../../assets/images/NewsImg_02.png')} />

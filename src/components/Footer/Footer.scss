@@ -1,7 +1,14 @@
+@import '../../global.scss';
+
 .footer__container {
     display: flex;
     flex-direction: column;
     margin: 200px 100px;
+
+    @include mobile {
+        margin: 0 50px;
+
+    }
 
     &::before {
         content: '';

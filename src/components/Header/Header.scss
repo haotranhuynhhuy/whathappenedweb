@@ -1,3 +1,5 @@
+@import '../../global.scss';
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -5,13 +7,19 @@
     align-items: center;
     background-color: #111111;
     color: #ffffff;
-    width: 100%;
+    width: 100vw;
+    position: relative;
 
     .header__left {
         padding: 27px 97px;
     }
 
     .header__right {
+
+        @include mobile {
+            display: none;
+        }
+
         display: flex;
         padding: 34px 120px;
         font-size: 14px;
@@ -41,6 +49,44 @@
 
         p:nth-child(4) {
             margin-right: 79px;
+        }
+    }
+
+    .header__right--expand {
+        width: 100%;
+        background-color: black;
+        border-top: 1px solid black;
+        position: absolute;
+        top: 10px;
+
+        .iconX {
+            display: none;
+
+            @include mobile {
+                display: block;
+                cursor: pointer;
+                position: absolute;
+                top: 0;
+                right: 10px;
+                font-size: 20px;
+                color: white;
+            }
+
+        }
+
+        p {
+            padding-left: 20px;
+        }
+    }
+
+    .icon {
+        display: none;
+
+        @include mobile {
+            cursor: pointer;
+            display: block;
+            font-size: 26px;
+            margin: 0 50px;
         }
     }
 }

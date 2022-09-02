@@ -1,9 +1,15 @@
+@import '../../../global.scss';
+
 .product__item {
     position: relative;
 }
 
 .product__image {
     max-width: 523px;
+
+    @include mobile {
+        width: 250px;
+    }
 }
 
 .product__icon {
@@ -22,6 +28,11 @@
     bottom: -46px;
     left: 15%;
 
+    @include mobile {
+        bottom: 5px;
+        left: 100%;
+    }
+
     .product__content {
         display: flex;
         justify-content: space-between;
@@ -32,7 +43,7 @@
         .product__content--title {
             font-size: 20px;
             font-weight: 800;
-            margin: 20px 0 15px 27px;
+            margin: 10px 0 15px 27px;
             width: 188px;
         }
 
