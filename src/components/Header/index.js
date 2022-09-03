@@ -12,12 +12,12 @@ const Header = () => {
                 <img src={logo} alt='' />
             </div>
             <div className={isNavExpanded ? 'header__right--expand' : 'header__right'}>
-                <FontAwesomeIcon icon={faX} className='iconX' onClick={() => setIsNavExpanded(false)} />
                 <p>INTRODUCTION</p>
                 <p>SOLUTION</p>
                 <p>RATE PLAN</p>
                 <p>LOGIN</p>
                 <p>APPLY FOR FREE USE</p>
+                <FontAwesomeIcon icon={faX} className='iconX' onClick={() => setIsNavExpanded(false)} />
             </div>
             <FontAwesomeIcon icon={faBars} className='icon' onClick={() => setIsNavExpanded(true)} />
         </div>

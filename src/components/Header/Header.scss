@@ -28,6 +28,10 @@
         padding: 34px 120px;
         font-size: 14px;
 
+        .iconX {
+            display: none;
+        }
+
         p:nth-child(1) {
             margin-right: 76px;
         }
@@ -64,8 +68,6 @@
         top: 10px;
 
         .iconX {
-            display: none;
-
             @include mobile {
                 display: block;
                 cursor: pointer;
